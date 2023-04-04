@@ -12,7 +12,7 @@ test ('upload', async () => {
     await browser.close()
 })
 
-test.only('dowload', async () => {
+test('dowload', async () => {
     const browser = await chromium.launch({headless: false})
     const context = await browser.newContext({acceptDownloads: true})
     const page = await context.newPage()
