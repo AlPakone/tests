@@ -1,7 +1,7 @@
 import {test, expect, chromium} from '@playwright/test';
 
 test ('navigate', async ({}) => {
-    const browser = await chromium.launch({headless: false})
+    const browser = await chromium.launch()
     const context = await browser.newContext()
     context.setDefaultTimeout(45000)
     const page = await context.newPage()

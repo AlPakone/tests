@@ -1,7 +1,7 @@
 import {chromium, test} from "@playwright/test";
 
 test ('multiple context and pages', async ({}) => {
-    const browser = await chromium.launch({headless: true})
+    const browser = await chromium.launch()
     const userContext = await browser.newContext()
     const adminContext = await browser.newContext()
     const userPageOne = await userContext.newPage()

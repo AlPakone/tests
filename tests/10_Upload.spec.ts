@@ -1,6 +1,6 @@
 import {chromium, expect, test} from "@playwright/test";
 test ('upload', async () => {
-    const browser = await chromium.launch({headless: false})
+    const browser = await chromium.launch()
     const context = await browser.newContext()
     const page = await context.newPage()
 
@@ -13,7 +13,7 @@ test ('upload', async () => {
 })
 
 test('dowload', async () => {
-    const browser = await chromium.launch({headless: false})
+    const browser = await chromium.launch()
     const context = await browser.newContext({acceptDownloads: true})
     const page = await context.newPage()
 

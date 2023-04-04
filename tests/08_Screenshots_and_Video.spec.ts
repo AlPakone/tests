@@ -2,7 +2,7 @@ import {chromium, test} from '@playwright/test';
 import {saveVideo} from "playwright-video";
 
 test ('screenshot', async () => {
-    const browser = await chromium.launch({headless: false})
+    const browser = await chromium.launch()
     const context = await browser.newContext()
     const page = await context.newPage()
     const ffmpegPath = require('@ffmpeg-installer/ffmpeg').path;

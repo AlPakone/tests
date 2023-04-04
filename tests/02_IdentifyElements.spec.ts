@@ -1,6 +1,6 @@
 import { test, expect, chromium } from '@playwright/test';
 test ('identify_elements', async ({ page}) => {
-    const browser = await chromium.launch({ headless: false });
+    const browser = await chromium.launch();
  //   const signIn = await page.locator('.btn')
   //  const signIn = await page.locator('css=button')
     //const signIn = await page.locator('xpath=//button[@type=submit]')
