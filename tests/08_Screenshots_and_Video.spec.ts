@@ -1,7 +1,7 @@
 import {chromium, test} from '@playwright/test';
 import {saveVideo} from "playwright-video";
 
-test.only ('screenshot', async () => {
+test ('screenshot', async () => {
     const browser = await chromium.launch({headless: false})
     const context = await browser.newContext()
     const page = await context.newPage()

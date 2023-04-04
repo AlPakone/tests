@@ -1,7 +1,7 @@
 import {test, expect, chromium} from '@playwright/test';
 const data = require('../testData/data.json')
 
-test ('navigate', async ({}) => {
+test.only ('navigate', async ({}) => {
     const browser = await chromium.launch({headless: false})
     const context = await browser.newContext()
     const page = await context.newPage()
@@ -14,11 +14,11 @@ test ('navigate', async ({}) => {
 
     await page.waitForTimeout(2000)
     await page.click('.nav-link')
-
-    await page.goBack()// go back
-    await page.waitForTimeout(1000)
-    await page.goForward()// go forward
-    await page.reload()// restart the page
+    //
+    // await page.goBack()// go back
+    // await page.waitForTimeout(1000)
+    // await page.goForward()// go forward
+    // await page.reload()// restart the page
 
 
 })
