@@ -1,5 +1,5 @@
 import { test, expect, chromium } from '@playwright/test';
-test ('identify_elements', async ({ page}) => {
+test.only ('identify_elements', async ({ page}) => {
     const browser = await chromium.launch({ headless: false });
  //   const signIn = await page.locator('.btn')
   //  const signIn = await page.locator('css=button')
