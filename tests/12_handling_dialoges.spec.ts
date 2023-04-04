@@ -3,8 +3,7 @@ import {chromium, devices, test} from '@playwright/test';
 test ('screenshot', async () => {
 
 const browser = await chromium.launch({});
-    const Iphone11 = devices("iPhone 11 Pro");
-    const context = await browser.newContext({...Iphone11})
+    const context = await browser.newContext({})
     const page = await context.newPage()
     await page.goto('https://www.seleniumeasy.com/test/javascript-alert-box-demo.html', { timeout: 45000 })
 
