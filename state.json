@@ -1,0 +1,14 @@
+{
+  "cookies": [],
+  "origins": [
+    {
+      "origin": "https://react-redux.realworld.io",
+      "localStorage": [
+        {
+          "name": "jwt",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhY2FtcC5hY2FkQGdtYWlsLmNvbSIsInVzZXJuYW1lIjoicWFjYW1wLmFjYWRAZ21haWwuY29tIiwiaWF0IjoxNjgwNjEwMjQwLCJleHAiOjE2ODU3OTQyNDB9.Yjg3mqDl_VEcHmoOmOKpWxZUQ6X0QwmcBCLxl3Gw9k8"
+        }
+      ]
+    }
+  ]
+}
